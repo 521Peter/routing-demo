@@ -14,11 +14,15 @@ export default function OtherLayout({
 }) {
   return (
     <html lang="en">
-      <header style={{ backgroundColor: "pink", padding: "1rem" }}>头部</header>
-      <body>{children}</body>
-      <footer style={{ backgroundColor: "orange", padding: "1rem" }}>
-        尾部
-      </footer>
+      <body>
+        <header style={{ backgroundColor: "pink", padding: "1rem" }}>
+          头部
+        </header>
+        {children}
+        <footer style={{ backgroundColor: "orange", padding: "1rem" }}>
+          尾部
+        </footer>
+      </body>
     </html>
   );
 }
