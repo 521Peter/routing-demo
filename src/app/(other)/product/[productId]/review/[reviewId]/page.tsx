@@ -9,6 +9,9 @@ export default async function reviewDetail({
   if (parseInt(reviewId) > 100) {
     notFound();
   }
+  if (Math.random() > 0.5) {
+    throw new Error("Something went wrong");
+  }
   return (
     <h1>
       review {reviewId} form product {productId}
